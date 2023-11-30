@@ -19,8 +19,8 @@ NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
 MYIP=$(wget -qO- ipinfo.io/ip)
-REPO='https://raw.githubusercontent.com/UnderTunnel/tunnel/main/'
-idc='https://raw.githubusercontent.com/UnderTunnel/sc/main/'
+REPO='https://raw.githubusercontent.com/UperTunnel/tunnel/main/'
+idc='https://raw.githubusercontent.com/UperTunnel/sc/main/'
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -58,10 +58,10 @@ sudo apt install curl -y
 sudo apt install wget -y
 sudo apt install vnstat -y
 MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$(curl -sS https://raw.githubusercontent.com/UnderTunnel/access/main/name | grep $MYIP | awk '{print $1}')
-valid=$(curl -sS https://raw.githubusercontent.com/UnderTunnel/access/main/name | grep $MYIP | awk '{print $4}')
-Name=$(curl -sS https://raw.githubusercontent.com/UnderTunnel/access/main/name | grep $MYIP | awk '{print $3}')
-Versi=$(curl -sS https://raw.githubusercontent.com/UnderTunnel/access/main/name | grep $MYIP | awk '{print $5}')
+IZIN=$(curl -sS https://raw.githubusercontent.com/UperTunnel/access/main/name | grep $MYIP | awk '{print $1}')
+valid=$(curl -sS https://raw.githubusercontent.com/UperTunnel/access/main/name | grep $MYIP | awk '{print $4}')
+Name=$(curl -sS https://raw.githubusercontent.com/UperTunnel/access/main/name | grep $MYIP | awk '{print $3}')
+Versi=$(curl -sS https://raw.githubusercontent.com/UperTunnel/access/main/name | grep $MYIP | awk '{print $5}')
 echo "Loading..."
 sleep 2
 if [ $MYIP = $IZIN ]; then
@@ -70,16 +70,16 @@ else
 echo "                                                              "
 echo -e "$Lyellow                ⚡ PREMIUM SPEED SCRIPT ⚡"$NC
 echo -e "$green┌──────────────────────────────────────────┐ "$NC
-echo -e "$Lyellow                  Autoscript By Makhlukvpn"$NC
+echo -e "$Lyellow                  Autoscript By FREE TUNNEL"$NC
 echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
-echo -e "$Lyellow               https://t.me/Undrstunnel"$NC
+echo -e "$Lyellow               https://t.me/UperAsu"$NC
 echo -e "$green└──────────────────────────────────────────┘"$NC
 exit 0
 fi
 echo "INSTALLING SCRIPT..."
 cat >/root/.user.ini <<-END
 vps  Author  Exp  Versi IpVps
-ScriptAutoInstaller UnderTunnel
+ScriptAutoInstaller UperTunnel
 END
 }
 function first_setup(){
@@ -170,7 +170,7 @@ echo -e "${red}└────────────────────�
 read -rp "Choose Your Domain Installation : " dom
 if test $dom -eq 1; then
 clear
-curl https://raw.githubusercontent.com/UnderTunnel/sc/main/cf.sh | bash | tee /root/install.log
+curl https://raw.githubusercontent.com/UperTunnel/sc/main/cf.sh | bash | tee /root/install.log
 print_success "Domain Script"
 elif test $dom -eq 2; then
 read -rp "Enter Your Domain : " domen
@@ -241,7 +241,7 @@ print_success "OpenVPN"
 }
 function install_slowdns(){
 print_install "SlowDNS"
-curl "https://github.com/UnderTunnel/sc/raw/main/tools/NSDOMAIN" | bash | tee /root/install.log
+curl "https://github.com/UperTunnel/sc/raw/main/tools/NSDOMAIN" | bash | tee /root/install.log
 cd
 NS=$(cat /etc/xray/dns)
 wget -O /etc/slowdns/dnstt-server "${REPO}core/dnstt-server" >/dev/null 2>&1
@@ -262,7 +262,7 @@ wget -q -O /etc/systemd/system/badvpn3.service "${REPO}service/badvpn3.service" 
 chmod +x /usr/sbin/badvpn > /dev/null 2>&1
 print_success "BadVPN"
 print_install "Udp-Custom"
-wget https://raw.githubusercontent.com/UnderTunnel/sc/main/tools/UDP-CUSTOM && chmod +x && ./UDP-CUSTOM >/dev/null 2>&1
+wget https://raw.githubusercontent.com/UperTunnel/sc/main/tools/UDP-CUSTOM && chmod +x && ./UDP-CUSTOM >/dev/null 2>&1
 print_success "Udp-Custom"
 print_install "Memasang backup server"
 wget https://raw.githubusercontent.com/artanodrop/v4/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh >/dev/null 2>&1
@@ -411,8 +411,8 @@ print_success "All Service"
 }
 function finish(){
 TIME="10"
-NAMES=$(curl -sS https://raw.githubusercontent.com/UnderTunnel/access/main/name | grep $MYIP | awk '{print $3}')
-EXPSC=$(curl -sS https://raw.githubusercontent.com/UnderTunnel/access/main/name | grep $MYIP | awk '{print $4}')
+NAMES=$(curl -sS https://raw.githubusercontent.com/UperTunnel/access/main/name | grep $MYIP | awk '{print $3}')
+EXPSC=$(curl -sS https://raw.githubusercontent.com/UperTunnel/access/main/name | grep $MYIP | awk '{print $4}')
 CHATID="-1001445209161"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
@@ -439,9 +439,9 @@ TEXT="
 <code>Exp Sc  : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
-<i>𝙐𝙣𝙙𝙚𝙧𝙨𝙏𝙪𝙣𝙣𝙚𝙡™ </i>
+<i>FREE TUNNEL™ </i>
 <code>────────────────────</code>
-"'&reply_markup={"inline_keyboard":[[{"text":"ORDER🐳","url":"https://t.me/Unstorex"},{"text":"CHANNEL🐬","url":"https://t.me/UndersTunnel_channel"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ORDER🐳","url":"https://t.me/UperAsu"},{"text":"CHANNEL🐬","url":"https://t.me/UperTunnel"}]]}'
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
